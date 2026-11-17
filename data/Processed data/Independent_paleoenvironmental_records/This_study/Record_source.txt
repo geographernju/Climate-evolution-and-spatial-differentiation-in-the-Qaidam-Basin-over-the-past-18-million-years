@@ -1,0 +1,8 @@
+Record source: This study
+Region or archive: KC-1, SG-1b, SG-1 (West); DHG, YH2, HTTL2 (East)
+Dataset: ML_group_equal.png, exact core predictions embedded in PNG Description metadata
+Original result: D:/results10/ML_group_equal.py and D:/results10/ML_group_equal.png
+Reconstruction: Modern Analogue 1/3 + WA-PLS 1/3 + ML 1/3; ML = mean(RF, ExtraTrees, Boosting)
+Effective member weights: 1/3, 1/3, 1/9, 1/9, 1/9
+Regional processing: original 0.25 Ma within-core bin means; sigma 0.2 Ma within cores; equal-core regional mean; internal-gap interpolation; sigma 0.2 Ma West and 0.4 Ma East
+Uncertainty: occupied-bin resampling with fitted methods and coefficients fixed; not full reconstruction uncertainty

@@ -1,0 +1,9 @@
+Chen et al. (2019). A Late Miocene Terrestrial Temperature History for the Northeastern Tibetan Plateau's Period of Tectonic Expansion.
+Publication: https://doi.org/10.1029/2019GL082805
+Data: https://doi.org/10.17632/yc7rgsm4hh.1
+Site: Mojiazhuang (MJZ), Xining Basin.
+Original Table S2: age column B; preferred MATmr calibration in column W (header MATmr with footnote c).
+All 30 published MATmr values are retained; no smoothing. The original paper flags two samples as potentially affected by aquatic sources, but their identities are not explicitly flagged in this workbook. The plot therefore represents the complete published table, not a reproduction of the filtered author curve.
+Calibration RMSE: 4.6 degrees C, not a sample-specific confidence interval.
+Shares MJZ materials with the Xining record in Zhang2024; independent of this study's Qaidam pollen reconstructions, but not independent of every external record.
+The version 2 link in the supplied list does not resolve; the available public version 1 is used.

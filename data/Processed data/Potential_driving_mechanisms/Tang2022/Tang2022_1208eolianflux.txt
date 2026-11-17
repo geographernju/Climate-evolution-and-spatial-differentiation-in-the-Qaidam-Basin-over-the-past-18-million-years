@@ -1,0 +1,253 @@
+# Northwest Pacific Ocean Eolian Flux Data Since 23 Ma
+#-----------------------------------------------------------------------
+#               World Data Service for Paleoclimatology, Boulder
+#                                   and
+#                      NOAA Paleoclimatology Program
+#-----------------------------------------------------------------------
+# Template Version 4.0
+# Encoding: UTF-8
+# NOTE: Please cite original publication, NOAA Landing Page URL, dataset and publication DOIs (where available), and date accessed when using downloaded data.
+# If there is no publication information, please cite investigator, study title, NOAA Landing Page URL, and date accessed.
+#
+# Description/Documentation lines begin with '#' followed by a space
+# Data lines have no '#'
+#
+# NOAA_Landing_Page: https://www.ncei.noaa.gov/access/paleo-search/study/36734
+#   Landing_Page_Description: NOAA Landing Page of this file's parent study, which includes all study metadata.
+#
+# Study_Level_JSON_Metadata: https://www.ncei.noaa.gov/pub/data/metadata/published/paleo/json/noaa-ocean-36734.json
+#   Study_Level_JSON_Description: JSON metadata of this data file's parent study, which includes all study metadata.
+#
+# Data_Type: Paleoceanography
+#
+# Dataset_DOI: 10.25921/z6tc-4222
+#
+# Science_Keywords: Atmospheric and Oceanic Circulation Patterns Reconstruction, westerlies
+#---------------------------------------
+# Resource_Links
+#
+# Data_Download_Resource: https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/tang2022/tang2022-1208eolianflux.txt
+#   Data_Download_Description: NOAA Template File; Eolian Flux Data
+#
+#---------------------------------------
+# Contribution_Date
+#   Date: 2022-09-05
+#---------------------------------------
+# File_Last_Modified_Date
+#   Date: 2025-05-27
+#---------------------------------------
+# Title
+#   Study_Name: Northwest Pacific Ocean Eolian Flux Data Since 23 Ma
+#---------------------------------------
+# Investigators
+#   Investigators: Tang, Yi; Wan, Shiming
+#---------------------------------------
+# Description_Notes_and_Keywords
+#   Description: The eolian flux record in North Pacifc Ocean was reconstructed by Sr-Nd isotopes and used to constrain the path of the westerlies since the early Miocene.
+#         Provided Keywords: eolian dust, the westerlies, Sr-Nd isotopes
+#---------------------------------------
+# Publication
+#   Authors: Yi Tang, Shiming Wan, Peter D. Clift, Debo Zhao, Zhaokai Xu, Jin Zhang, Zehua Song, Hualong Jin, Mengjun Li, Anchun Li
+#   Published_Date_or_Year: 2022-09-28
+#   Published_Title: Northward shift of the Northern Hemisphere westerlies in the early to late Miocene and its links to Tibetan uplift
+#   Journal_Name: Geophysical Research Letters
+#   Volume: 49 
+#   Edition: 
+#   Issue: 18
+#   Pages: 
+#   Report_Number: e2022GL099311
+#   DOI: 10.1029/2022GL099311
+#   Online_Resource: 
+#   Full_Citation: 
+#   Abstract: Despite the importance of the westerlies to the global climate system, we still know little about their long-term evolution and possible orographic controls during the late Cenozoic because of the lack of sedimentary records with precise chronological control. Eolian deposition in the North Pacific preserved past information about the westerlies, the major wind system delivering Asian dust to the Pacific. A continuous, high-resolution eolian flux record since 23 Ma was reconstructed from sediments at Deep Sea Drilling Project (DSDP) Site 296 in the North Pacific. Combined with dust flux at Ocean Drilling Program (ODP) Site 1208, variations in their difference indicated a northwards shift of the westerlies during 23-9 Ma and a relatively stable state since then. We suggest that Tibetan uplift since the early Miocene began to drive the poleward shift of the westerlies until 9 Ma, after which the westerlies remained relatively stable over Asia on million-year timescales.
+#---------------------------------------
+# Funding_Agency
+#   Funding_Agency_Name: National Natural Science Foundation of China
+#   Grant: 42125602, 42076052
+#---------------------------------------
+# Funding_Agency
+#   Funding_Agency_Name: Strategic Priority Research Program of Chinese Academy of Sciences
+#   Grant: XDB40010100
+#---------------------------------------
+# Funding_Agency
+#   Funding_Agency_Name: Innovation Project
+#   Grant: 2022QNLM050203, MGQNLM-KF202001
+#---------------------------------------
+# Funding_Agency
+#   Funding_Agency_Name: Taishan and Aoshan Talents Program
+#   Grant: 2017ASTCP-ES01
+#---------------------------------------
+# Site_Information
+#   Site_Name: ODP Site 1208
+#   Location: North Pacific Ocean
+#   Northernmost_Latitude: 36.13
+#   Southernmost_Latitude: 36.13
+#   Easternmost_Longitude: 158.2
+#   Westernmost_Longitude: 158.2
+#   Elevation_m: 3346
+#---------------------------------------
+# Data_Collection
+#   Collection_Name: ODP-1208 Eolian Flux
+#   First_Year: 23370000
+#   Last_Year: 40000
+#   Time_Unit: calendar year before present
+#   Core_Length_m: 320
+#   Parameter_Keywords: 
+#   Notes: 
+#---------------------------------------
+# Chronology_Information 
+# Chronology: 
+#---------------------------------------
+# Variables
+# PaST_Thesaurus_Download_Resource: https://www.ncei.noaa.gov/access/paleo-search/skos/past-thesaurus.rdf
+#   PaST_Thesaurus_Download_Description: Paleoenvironmental Standard Terms (PaST) Thesaurus terms, definitions, and relationships in SKOS format.
+#
+# Data variables follow that are preceded by "##" in columns one and two.
+# Variables list, one per line, shortname-tab-var components: what, material, error, units, seasonality, data type, detail, method, C or N for Character or Numeric data)
+#
+## Depth	depth,,,meter,,Paleoceanography,,,N,
+## Age	age,,,million years ago,,Paleoceanography,,,N,
+## Siliciclastic_fraction	mineral matter,,,percent,,Paleoceanography,,,N,chemical extraction
+## Eolian_fraction	dust,,,percent,,Paleoceanography,,,N,two end-members mixing
+## Eolian_flux	dust,,,gram per square centimeter per kiloyear,,Paleoceanography,,,N,calculated as MAR siliciclastic fraction eolian fraction
+#------------------------
+# Data:
+# Data lines follow (have no #)
+# Data line format - tab-delimited text, variable short name as header
+# Missing_Values: 
+Depth	Age	Siliciclastic_fraction	Eolian_fraction	Eolian_flux
+2.14	0.04	37	61.86	0.73989
+21.39	0.39	21	61.86	0.48254
+29.96	0.55	17	61.86	0.46027
+55.63	1.06	44	61.86	0.83145
+64.20	1.26	31	96.46	0.81989
+72.76	1.47	18	95.12	0.51458
+81.31	1.68	19	93.71	0.57911
+89.87	1.88	19	92.30	0.53902
+98.43	2.10	46	91.62	1.23596
+104.13	2.23	29	90.87	0.87876
+109.79	2.36	21	90.43	0.65474
+115.48	2.49	46	81.08	1.49187
+121.15	2.62	56	79.04	1.21875
+126.84	2.76	50	84.52	1.03881
+132.53	2.91	16	90.43	0.46031
+138.19	3.05	32	56.66	0.46740
+143.88	3.20	15	73.35	0.37259
+149.56	3.38	12	91.23	0.38315
+155.26	3.54	16	59.69	0.27159
+160.91	3.73	20	60.61	0.23030
+165.09	3.89	58	61.69	0.74465
+169.27	4.05	21	92.30	0.39965
+173.41	4.20	15	90.55	0.37940
+177.60	4.32	24	88.91	0.43566
+181.77	4.46	27	87.60	0.58690
+185.96	4.65	52	92.57	0.81368
+190.09	4.84	27	87.16	0.35911
+194.27	4.99	18	81.76	0.25345
+198.45	5.17	21	77.49	0.35645
+202.58	5.34	29	84.87	0.50497
+206.78	5.51	56	88.62	0.94819
+209.97	5.63	24	84.38	0.42192
+212.26	5.72	21	83.90	0.32722
+214.98	5.83	28	91.49	0.54439
+217.74	5.95	28	90.49	0.43162
+220.49	6.09	26	89.39	0.42906
+223.22	6.26	23	88.10	0.23172
+224.22	6.30	26	89.09	0.49893
+229.44	6.49	31	89.33	0.66103
+231.44	6.56	50	90.43	0.80125
+234.19	6.75	34	101.46	0.39469
+235.19	6.82	41	83.47	0.46157
+239.66	7.14	26	76.84	0.27969
+242.42	7.33	42	63.77	0.30162
+245.15	7.64	25	83.19	0.10398
+248.63	7.98	45	90.48	0.34382
+250.63	8.18	32	98.48	0.28756
+252.21	8.33	30	78.37	0.19592
+253.78	8.48	16	89.39	0.14839
+255.37	8.64	13	85.02	0.10628
+256.47	8.73	35	80.36	0.32869
+258.52	8.87	27	77.74	0.26433
+260.13	8.98	45	73.67	0.39560
+261.68	9.09	22	78.50	0.23080
+263.26	9.21	27	83.34	0.27336
+265.85	9.40	17	88.62	0.19584
+268.01	9.56	21	72.24	0.19505
+269.58	9.68	30	68.90	0.21842
+271.17	9.81	13	110.13	0.13215
+272.75	9.97	11	78.59	0.07938
+273.95	10.07	16	126.49	0.18974
+277.05	10.41	19	75.55	0.12542
+277.49	10.46	21	104.88	0.18774
+279.06	10.62	20	103.18	0.18882
+280.64	10.78	9	97.74	0.07819
+282.23	10.94	60	92.30	0.34427
+283.81	11.13	50	94.77	0.30704
+285.00	11.27	48	97.82	0.27684
+286.97	11.51	44	100.07	0.31023
+288.54	11.69	40	103.93	0.29206
+290.12	11.88	18	98.77	0.13137
+291.70	12.08	24	105.84	0.17993
+293.28	12.29	24	92.44	0.14790
+294.86	12.50	7	78.37	0.03605
+296.45	12.74	6	81.21	0.03411
+299.61	13.19	19	84.45	0.10472
+301.19	13.42	5	90.53	0.02716
+302.77	13.65	4	93.64	0.02341
+303.85	13.87	7	96.74	0.02902
+305.92	14.35	5	65.19	0.01304
+307.50	14.72	8	116.82	0.04205
+309.08	15.08	9	107.97	0.04751
+310.66	15.57	28	99.36	0.08744
+312.24	16.06	35	91.83	0.08541
+313.82	16.56	37	84.30	0.09021
+313.96	16.60	34	76.62	0.07739
+315.36	17.04	12	76.62	0.03371
+315.52	17.09	19	76.62	0.05440
+315.69	17.15	14	76.89	0.04229
+315.86	17.20	16	77.22	0.04865
+316.04	17.26	20	77.49	0.05967
+316.20	17.31	17	84.69	0.05590
+316.37	17.36	34	90.70	0.11700
+316.55	17.42	53	86.50	0.17041
+316.72	17.47	35	81.47	0.10591
+316.88	17.52	21	77.27	0.05950
+317.05	17.57	9	82.82	0.02816
+317.23	17.63	9	88.36	0.03004
+317.39	17.68	13	86.06	0.04303
+317.56	17.73	7	84.14	0.02272
+317.73	17.79	23	83.84	0.07378
+317.91	17.84	14	83.48	0.04425
+318.07	17.89	17	83.19	0.05573
+318.24	17.95	20	79.49	0.06359
+318.42	18.00	7	84.39	0.02279
+318.58	18.05	12	88.48	0.04247
+318.75	18.11	10	92.57	0.03795
+318.92	18.16	55	75.18	0.16915
+318.98	18.18	40	60.68	0.09770
+319.02	18.19	24	66.46	0.06580
+319.07	18.29	19	66.20	0.00397
+319.12	18.50	44	63.58	0.00827
+319.17	18.71	58	58.07	0.00987
+319.23	18.96	64	54.52	0.01036
+319.27	19.13	69	58.23	0.01223
+319.32	19.35	68	52.17	0.01096
+319.37	19.56	62	53.63	0.01019
+319.42	19.77	57	62.63	0.01065
+319.48	20.02	48	71.64	0.01075
+319.52	20.19	41	51.89	0.00623
+319.57	20.41	65	55.22	0.01104
+319.62	20.62	64	59.53	0.01131
+319.67	20.83	46	57.75	0.00809
+319.73	21.08	66	56.14	0.01123
+319.77	21.25	71	54.21	0.01138
+319.82	21.47	70	52.90	0.01111
+319.87	21.68	60	54.07	0.00973
+319.92	21.89	71	54.15	0.01137
+319.98	22.14	64	54.22	0.01030
+320.02	22.31	79	53.52	0.01284
+320.07	22.52	79	53.04	0.01273
+320.12	22.74	61	48.84	0.00879
+320.17	22.95	39	50.04	0.00600
+320.23	23.20	36	51.19	0.00563
+320.27	23.37	41	52.55	0.00631

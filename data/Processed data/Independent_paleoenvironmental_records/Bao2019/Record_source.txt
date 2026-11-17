@@ -1,0 +1,6 @@
+Record source: Bao et al. (2019), Journal of Asian Earth Sciences
+Region or archive: Huaitoutala (HTTL), eastern Qaidam Basin
+Dataset: Supplementary Table S1; Age and CIA columns; age >5 Ma
+Publication: https://doi.org/10.1016/j.jseaes.2018.10.018
+Data: https://ars.els-cdn.com/content/image/1-s2.0-S1367912018304425-mmc1.docx
+Numerical data are present and plotted. The article PDF is not present in this archive.

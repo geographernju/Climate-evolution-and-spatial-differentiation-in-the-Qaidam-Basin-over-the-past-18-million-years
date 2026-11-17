@@ -1,0 +1,6 @@
+Record source: Liang et al. (2021), Palaeogeography, Palaeoclimatology, Palaeoecology, 110384
+Region or archive: KC-1; western Qaidam Basin
+Dataset: Supplementary biomarker workbook; beta-carotane/C36
+Publication: https://doi.org/10.1016/j.palaeo.2021.110384
+Data: https://ars.els-cdn.com/content/image/1-s2.0-S0031018221001693-mmc1.xlsx
+Numerical data are present and plotted. The article PDF is not present in this archive.

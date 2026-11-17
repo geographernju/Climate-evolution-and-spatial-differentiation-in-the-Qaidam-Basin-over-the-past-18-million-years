@@ -1,0 +1,6 @@
+Record source: Rea et al. (1998), Paleoceanography 13, 215-224
+Region or archive: ODP Site 885A, North Pacific
+Dataset: PANGAEA 859270; Age and dust mass accumulation rate
+Publication: https://doi.org/10.1029/98PA00123
+Data: https://doi.org/10.1594/PANGAEA.859270
+Numerical data are present and plotted. The article PDF is not present in this archive.

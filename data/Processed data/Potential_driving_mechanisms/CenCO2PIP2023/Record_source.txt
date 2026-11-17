@@ -1,0 +1,6 @@
+Record source: Cenozoic CO2 Proxy Integration Project Consortium (2023), Science
+Region or archive: Global compilation
+Dataset: Author Bayesian model output v1.2; 100-kyr CO2 posterior quantiles
+Publication: https://doi.org/10.1126/science.adi5177
+Data: https://zenodo.org/records/14537923
+CO2 posterior values are natural logarithms. Plot exp(quantile) to obtain ppm.

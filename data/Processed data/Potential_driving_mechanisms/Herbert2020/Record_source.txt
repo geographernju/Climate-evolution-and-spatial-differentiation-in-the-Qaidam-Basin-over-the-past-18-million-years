@@ -1,0 +1,14 @@
+Herbert et al. (2020). Bihemispheric Warming in the Miocene Climatic Optimum as Seen From the Danish North Sea.
+Journal: Paleoceanography and Paleoclimatology 35, e2020PA003935.
+Publication: https://doi.org/10.1029/2020PA003935
+PDF: https://par.nsf.gov/servlets/purl/10386318
+Data: https://doi.org/10.1594/PANGAEA.921243
+Bundle, including age-model constraints: https://doi.org/10.1594/PANGAEA.921249
+Site: Sdr. Vium borehole, Danish North Sea.
+Plot: published sand-corrected BACON age (ka)/1000 and Muller et al. (1998) SST column, restricted to 0-18 Ma.
+Both SST records in the comparison panel use the published Muller calibration; no new proxy calibration was fitted.
+Display: raw observations and line through median replicate values at identical ages; no smoothing or binning. Gaps greater than 1.5 Myr remain unconnected.
+Missing values and flagged entries are omitted. The full original dataset, including ages older than 18 Ma and alternative age models and calibrations, is retained.
+Interpretation: remote marine temperature comparison; age uncertainties and possible seasonality limit event-level alignment with terrestrial MAT.
+
+Classification: Potential driving mechanisms; large-scale ocean thermal background. Included in Figure 2, not Figure 1.

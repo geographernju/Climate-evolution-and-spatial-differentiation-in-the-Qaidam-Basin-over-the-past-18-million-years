@@ -1,0 +1,6 @@
+Record source: Jia et al. (2021), Palaeogeography, Palaeoclimatology, Palaeoecology 567, 110244
+Region or archive: KC-1, SG-1b, SG-1; western Qaidam Basin
+Dataset: jia2021.csv; ANNP_Mean and ANNT_Mean
+Publication: https://doi.org/10.1016/j.palaeo.2021.110244
+Data: Local author-supplied CSV
+Shared pollen archives: this is a method comparison, not independent validation.

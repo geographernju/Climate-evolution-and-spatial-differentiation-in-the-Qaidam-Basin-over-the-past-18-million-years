@@ -1,0 +1,7 @@
+Tang et al. (2022). Northward Shift of the Northern Hemisphere Westerlies in the Early to Late Miocene and Its Links to Tibetan Uplift.
+Publication: https://doi.org/10.1029/2022GL099311
+Data repository: https://doi.org/10.25921/z6tc-4222
+Data directory: https://www.ncei.noaa.gov/pub/data/paleo/contributions_by_author/tang2022/
+Sites: DSDP 296 and ODP 1208, North Pacific.
+Raw files: Age is explicitly defined in MILLION YEARS AGO in the variable definitions; Eolian_flux units are g cm^-2 kyr^-1.
+Both raw flux records are shown separately in Figure 2 with a reversed y-axis. The derived flux-ratio curve and its CSV have been removed at the user's request. Flux depends on source aridity, provenance and transport and is not a direct reconstruction of wind speed or Qaidam moisture delivery.

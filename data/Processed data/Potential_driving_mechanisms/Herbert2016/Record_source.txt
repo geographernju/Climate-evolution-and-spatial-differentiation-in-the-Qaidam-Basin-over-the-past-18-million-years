@@ -1,0 +1,13 @@
+Herbert et al. (2016). Late Miocene global cooling and the rise of modern ecosystems.
+Journal: Nature Geoscience 9, 843-847.
+Publication: https://doi.org/10.1038/ngeo2813
+PDF: https://www.oeschger.unibe.ch/unibe/portal/fak_naturwis/g_dept_kzen/d_c_oeschger/content/e54493/e54523/e576104/e671238/e696727/pane696796/e699643/files699644/Herbert_et_al_2016_eng.pdf
+Data: https://doi.org/10.1594/PANGAEA.885578
+Data citation: Herbert et al. (2018), Table S2, SST estimates as a function of age, ODP Site 162-982.
+Site: ODP 982, North Atlantic, approximately 57.5 N, 15.85 W.
+Plot: published age (ka BP)/1000 and published Muller et al. (1998) SST column.
+The repository age model was revised in October 2017 following the revised composite depth framework; the plot therefore need not exactly replicate the original 2016 or Liang2021 figures.
+Display: raw observations and 0.1-Myr bin medians; gaps greater than 0.6 Myr remain unconnected.
+Interpretation: remote marine temperature comparison, not local Qaidam air temperature and not a direct precipitation or westerly-strength reconstruction.
+
+Classification: Potential driving mechanisms; large-scale ocean thermal background. Included in Figure 2, not Figure 1.

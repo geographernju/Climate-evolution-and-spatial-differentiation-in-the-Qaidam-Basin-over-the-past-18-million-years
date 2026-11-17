@@ -1,0 +1,5 @@
+Record source: Westerhold et al. (2020), Science 369, 1383-1387
+Region or archive: Global benthic foraminiferal composite (CENOGRID)
+Dataset: PANGAEA 917717, Table S34; author long-term LOESS
+Publication: https://doi.org/10.1126/science.aba6853
+Data: https://doi.org/10.1594/PANGAEA.917717

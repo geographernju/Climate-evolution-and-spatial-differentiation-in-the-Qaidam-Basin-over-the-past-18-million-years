@@ -1,0 +1,5 @@
+Record source: Zhang et al. (2024), Journal of Geophysical Research: Atmospheres
+Region or archive: KC-1, Qaidam; MJZ, Xining; YW, Longzhong
+Dataset: Supplementary Table S2; published LOWESS series
+Publication: https://doi.org/10.1029/2024JD041025
+Data: https://figshare.com/s/bc3ee24f430714dc5a6c
