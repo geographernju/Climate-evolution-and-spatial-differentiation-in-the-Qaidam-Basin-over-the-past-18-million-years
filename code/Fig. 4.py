@@ -160,7 +160,7 @@ def own_data(path):
             np.testing.assert_allclose(members@np.asarray(reconstruction['weights']),values['estimate'],equal_nan=True)
     grid = np.arange(0, 18.0125, 0.025)
     result = {}
-    for field, var, unit in [('Annual precipitation (mm/year)', 'MAP', 'mm/yr'), ('Annual temperature (deg C)', 'MAT', '\xb0C')]:
+    for field, var, unit in [('Annual precipitation (mm/year)', 'MAP', 'mm'), ('Annual temperature (deg C)', 'MAT', '\xb0C')]:
         for names, region, sigma in [(['KC-1', 'SG-1b', 'SG-1'], 'West', 0.2), (['DHG', 'YH2', 'HTTL2'], 'East', 0.4)]:
             parts = []
             for name in names:
@@ -336,7 +336,7 @@ def write_summary(out,figure,used):
         if 'interval_ranges' in data.attrs:
             intervals=data.attrs['interval_ranges']
             age=f"{intervals[0]['old_ma']:g} to {intervals[-1]['young_ma']:g}"
-        unit={'deg C':'deg C','°C':'deg C','mm/yr':'mm yr^-1','per mil VPDB':'per mil VPDB'}.get(meta['unit'],meta['unit'])
+        unit={'deg C':'deg C','°C':'deg C','mm':'mm','per mil VPDB':'per mil VPDB'}.get(meta['unit'],meta['unit'])
         full_reference='This study'
         if not key.startswith('Own_'):
             author,journal=source[0].split(', ',1)
@@ -399,7 +399,7 @@ def load(root,own):
     return data
 def main():
     a=args();style();data=load(a.root,a.own);used=[]
-    labels=[('This study: final regional precipitation reconstructions','MAP (mm yr$^{-1}$)'),
+    labels=[('This study: final regional precipitation reconstructions','MAP (mm)'),
             ('This study: final regional temperature reconstructions','MAT (°C)'),
             ('Atmospheric CO$_2$: published Bayesian fit - CenCO2PIP','CO$_2$ (ppm)'),
             ('Benthic oxygen isotopes - Westerhold et al. (2020; reversed axis)','$\\delta^{18}$O (\u2030 VPDB)'),

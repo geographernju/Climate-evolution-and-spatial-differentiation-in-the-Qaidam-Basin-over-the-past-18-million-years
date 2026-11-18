@@ -392,7 +392,7 @@ def main(saved=None):
         d = run(i) if saved is None else saved[label]
         results[label] = d
         print(label, d['methods'], {c: v['outer_test'] for c, v in d['cores'].items()}, flush=True)
-        display_label = 'MAT (°C)' if i == 5 else 'MAP (mm/year)'
+        display_label = 'MAT (°C)' if i == 5 else 'MAP (mm)'
         g = np.arange(0, 18.0125, 0.025)
         ax = axes[j]
         trend_values = []
@@ -438,10 +438,10 @@ def main(saved=None):
     cores = sum(REGIONS, [])
     rows = []
     for label, d in results.items():
-        row = ['MAT (°C)' if label.startswith('MAT') else 'MAP (mm/year)']
+        row = ['MAT (°C)' if label.startswith('MAT') else 'MAP (mm)']
         for core in cores:
             rmsep, r2, _ = d['cores'][core]['cell_test']
-            row.append(f'{rmsep:.1f} / {r2:.2f}')
+            row.append(f'{rmsep:.2f} / {r2:.2f}' if label.startswith('MAT') else f'{rmsep:.0f} / {r2:.2f}')
         rows.append(row)
     table = tab.table(cellText=rows, colLabels=['Climate variable', 'KC-1', 'SG-1b', 'SG-1', 'DHG', 'YH', 'HTTL'], colWidths=[.22]+[.13]*6, cellLoc='center', bbox=[0, 0, 1, 1])
     table.auto_set_font_size(False)

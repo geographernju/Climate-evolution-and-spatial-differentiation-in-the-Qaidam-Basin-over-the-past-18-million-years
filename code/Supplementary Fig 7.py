@@ -482,7 +482,7 @@ def render(results):
             values.extend(y for x,y in curves.values())
             ax.set_title(f'({chr(97+2*row+region)}) {region_name}, Qaidam',loc='left',pad=10)
             ax.set_xlim(18,0);ax.grid(alpha=.14)
-            if region==0:ax.set_ylabel('MAP (mm/year)' if var=='MAP' else 'MAT (°C)')
+            if region==0:ax.set_ylabel('MAP (mm)' if var=='MAP' else 'MAT (°C)')
             if row==1:ax.set_xlabel('Age (Ma)')
             else:ax.tick_params(axis='x',labelbottom=False)
         values=np.concatenate(values);lo,hi=np.nanmin(values),np.nanmax(values);margin=.09*(hi-lo)
@@ -496,9 +496,9 @@ def render(results):
     for name in [MAIN]+CONTROL:
         map_model=results['MAP']['schemes'][name];mat_model=results['MAT']['schemes'][name]
         np.testing.assert_allclose(map_model['group_weights'],mat_model['group_weights'])
-        weights=' / '.join(f'{w*100:.1f}' for w in map_model['group_weights'])
-        rows.append([DISPLAY[name],weights,f"{map_model['macro_rmsep']:.2f}",f"{map_model['macro_r2']:.3f}",
-                     f"{mat_model['macro_rmsep']:.3f}",f"{mat_model['macro_r2']:.3f}"])
+        weights=' / '.join(f'{w*100:.0f}' for w in map_model['group_weights'])
+        rows.append([DISPLAY[name],weights,f"{map_model['macro_rmsep']:.0f}",f"{map_model['macro_r2']:.2f}",
+                     f"{mat_model['macro_rmsep']:.2f}",f"{mat_model['macro_r2']:.2f}"])
     table=ax.table(cellText=rows,colLabels=['Scheme','Weights (%)\nModern Analogue / WA-PLS / ML',
         'MAP\nRMSEP','MAP R²','MAT\nRMSEP','MAT R²'],colWidths=[.23,.31,.13,.10,.13,.10],
         cellLoc='center',bbox=[0,0,1,1])

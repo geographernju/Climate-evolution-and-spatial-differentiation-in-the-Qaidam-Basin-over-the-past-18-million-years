@@ -198,7 +198,7 @@ def load():
 names = ['RF', 'ExtraTrees', 'Boosting']
 choices = {'RF': [['RF', 'global', 0.5, 5], ['RF', 'global', 0.5, 5], ['RF', 'global', 0.5, 5], ['RF', 'global', 0.5, 5], ['RF', 'global', 0.5, 5], ['RF', 'global', 0.5, 5]], 'ExtraTrees': [['ExtraTrees', 'global', 0.5, 5], ['ExtraTrees', 'global', 0.5, 5], ['ExtraTrees', 'global', 0.5, 5], ['ExtraTrees', 'global', 0.5, 5], ['ExtraTrees', 'global', 0.5, 5], ['ExtraTrees', 'global', 0.5, 5]], 'Boosting': [['Boosting', 'global'], ['Boosting', 'global'], ['Boosting', 'global'], ['Boosting', 'global'], ['Boosting', 'global'], ['Boosting', 'global']]}
 out = Path('D:/results/Supplementary Fig 2.png')
-protocol = 'Independent fixed-parameter RF, ExtraTrees and histogram gradient boosting fitted directly to annual precipitation in mm/year. Five spatial outer folds.'
+protocol = 'Independent fixed-parameter RF, ExtraTrees and histogram gradient boosting fitted directly to annual precipitation in mm. Five spatial outer folds.'
 def nearest(axis, v):
     k = np.clip(np.searchsorted(axis, v), 1, len(axis) - 1)
     return np.where(abs(v - axis[k - 1]) <= abs(v - axis[k]), k - 1, k)
@@ -479,7 +479,7 @@ def render(views, data, stats, ranges):
             style = dict(facecolor='white', edgecolor='none', alpha=0.82, pad=1)
             ax.set_title(f'({chr(97+2*j+k)}) '+['West, Qaidam','East, Qaidam'][k],loc='left',pad=10)
             ax.set_title(method,loc='right',pad=10)
-            if k==0:ax.set_ylabel('MAP (mm/year)')
+            if k==0:ax.set_ylabel('MAP (mm)')
             if j == len(names) - 1:
                 ax.set_xlabel('Age (Ma)')
             low, high = ax.dataLim.intervaly
@@ -497,7 +497,7 @@ def render(views, data, stats, ranges):
     tab.axis('off')
     tab.set_title('Climate-cell-weighted RMSEP / predictive R²',pad=14)
     cores = sum(regions, [])
-    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.1f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
+    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.0f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
     columns=['Method']+[display_core(c) for c in cores]
     tbl = tab.table(cellText=rows, colLabels=columns, colWidths=[.22]+[.13]*6, cellLoc='center', bbox=[0, 0, 1, 1])
     tbl.auto_set_font_size(False)

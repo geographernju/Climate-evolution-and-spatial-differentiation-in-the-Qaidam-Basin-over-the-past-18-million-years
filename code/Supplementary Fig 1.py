@@ -635,7 +635,7 @@ def render(views, data, stats, ranges):
             style = dict(facecolor='white', edgecolor='none', alpha=0.82, pad=1)
             ax.set_title(f'({chr(97+2*j+k)}) '+['West, Qaidam','East, Qaidam'][k],loc='left',pad=10)
             ax.set_title(method,loc='right',pad=10)
-            if k==0:ax.set_ylabel('MAP (mm/year)')
+            if k==0:ax.set_ylabel('MAP (mm)')
             if j == len(names) - 1:
                 ax.set_xlabel('Age (Ma)')
             low, high = ax.dataLim.intervaly
@@ -654,7 +654,7 @@ def render(views, data, stats, ranges):
     tab.axis('off')
     tab.set_title('Climate-cell-weighted RMSEP / predictive R²',pad=14)
     cores = sum(regions, [])
-    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.1f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
+    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.0f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
     columns=['Method']+[display_core(c) for c in cores]
     tbl = tab.table(cellText=rows, colLabels=columns, colWidths=[.22]+[.13]*6, cellLoc='center', bbox=[0, 0, 1, 1])
     tbl.auto_set_font_size(False)

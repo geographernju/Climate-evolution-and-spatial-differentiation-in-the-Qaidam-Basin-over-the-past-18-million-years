@@ -1,6 +1,6 @@
 ﻿Subplots,Indicator,Site_or_region,Age_range_Ma,Units,Reference,Publication_URL,Data_source
-2a,Mean annual precipitation (MAP),"West, Qaidam (KC-1, SG-1b, SG-1)",18 to 0.125,mm yr^-1,This study,,ML_group_equal.png (this study; archived exact core predictions)
-2a,Mean annual precipitation (MAP),"East, Qaidam (DHG, YH2, HTTL2)",15.62 to 1.85,mm yr^-1,This study,,ML_group_equal.png (this study; archived exact core predictions)
+2a,Mean annual precipitation (MAP),"West, Qaidam (KC-1, SG-1b, SG-1)",18 to 0.125,mm,This study,,ML_group_equal.png (this study; archived exact core predictions)
+2a,Mean annual precipitation (MAP),"East, Qaidam (DHG, YH2, HTTL2)",15.62 to 1.85,mm,This study,,ML_group_equal.png (this study; archived exact core predictions)
 2b,Mean annual temperature (MAT),"West, Qaidam (KC-1, SG-1b, SG-1)",18 to 0.125,deg C,This study,,ML_group_equal.png (this study; archived exact core predictions)
 2b,Mean annual temperature (MAT),"East, Qaidam (DHG, YH2, HTTL2)",15.62 to 1.85,deg C,This study,,ML_group_equal.png (this study; archived exact core predictions)
 2c,Benthic foraminiferal delta18O,Global benthic foraminiferal composite (CENOGRID),18 to 0,per mil VPDB,"Westerhold et al. (2020). An astronomically dated record of Earth's climate and its predictability over the last 66 million years. Science 369, 1383-1387.",https://doi.org/10.1126/science.aba6853,https://doi.org/10.1594/PANGAEA.917717

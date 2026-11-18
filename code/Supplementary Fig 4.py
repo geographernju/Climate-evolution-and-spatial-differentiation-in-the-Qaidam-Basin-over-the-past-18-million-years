@@ -642,7 +642,7 @@ def render(views, data, stats, ranges):
     tab.axis('off')
     tab.set_title('Climate-cell-weighted RMSEP / predictive R²',pad=14)
     cores = sum(regions, [])
-    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.1f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
+    rows = [[method] + [f'{stats[c]['cell_rmsep'][j]:.2f} / {stats[c]['cell_r2'][j]:.2f}' for c in cores] for j, method in enumerate(names)]
     columns=['Method']+[display_core(c) for c in cores]
     tbl = tab.table(cellText=rows, colLabels=columns, colWidths=[.22]+[.13]*6, cellLoc='center', bbox=[0, 0, 1, 1])
     tbl.auto_set_font_size(False)

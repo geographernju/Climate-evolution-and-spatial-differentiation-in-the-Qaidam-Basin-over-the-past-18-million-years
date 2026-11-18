@@ -160,7 +160,7 @@ def own_data(path):
             np.testing.assert_allclose(members@np.asarray(reconstruction['weights']),values['estimate'],equal_nan=True)
     grid = np.arange(0, 18.0125, 0.025)
     result = {}
-    for field, var, unit in [('Annual precipitation (mm/year)', 'MAP', 'mm/yr'), ('Annual temperature (deg C)', 'MAT', '\xb0C')]:
+    for field, var, unit in [('Annual precipitation (mm/year)', 'MAP', 'mm'), ('Annual temperature (deg C)', 'MAT', '\xb0C')]:
         for names, region, sigma in [(['KC-1', 'SG-1b', 'SG-1'], 'West', 0.2), (['DHG', 'YH2', 'HTTL2'], 'East', 0.4)]:
             parts = []
             for name in names:
@@ -329,7 +329,7 @@ def write_summary(out,figure,used):
         if 'interval_ranges' in data.attrs:
             intervals=data.attrs['interval_ranges']
             age=f"{intervals[0]['old_ma']:g} to {intervals[-1]['young_ma']:g}"
-        unit={'deg C':'deg C','°C':'deg C','mm/yr':'mm yr^-1','per mil VPDB':'per mil VPDB'}.get(meta['unit'],meta['unit'])
+        unit={'deg C':'deg C','°C':'deg C','mm':'mm','per mil VPDB':'per mil VPDB'}.get(meta['unit'],meta['unit'])
         full_reference='This study'
         if not key.startswith('Own_'):
             author,journal=source[0].split(', ',1)
@@ -370,9 +370,9 @@ def load(root,own):
     for name,x,y in [('Qaidam',0,1),('Xining',5,6),('Longzhong',10,11)]:
         key='Zhang_'+name
         data[key]=pair(root,key,['zhang2024.xlsx','Zhang2024/*.xlsx'],'Table S2',4,x+2,y+2,
-                       'mm/yr',f'Published LOWESS age column {x+3}; MAP column {y+3}')
+                       'mm',f'Published LOWESS age column {x+3}; MAP column {y+3}')
     path=find(root,'jia2021.csv','jia2021/*.csv','Jia2021/*.csv');table=pd.read_csv(path);grid=np.arange(0,18.0125,.025)
-    for column,key,unit in [('ANNP_Mean','Jia_MAP','mm/yr'),('ANNT_Mean','Jia_MAT','deg C')]:
+    for column,key,unit in [('ANNP_Mean','Jia_MAP','mm'),('ANNT_Mean','Jia_MAT','deg C')]:
         parts=[(num(group['Age (Ma)']),num(group[column])) for _,group in table.groupby('Sites')]
         curves=np.asarray([bin_core(x,y,grid) for x,y in parts]);count=np.isfinite(curves).sum(0)
         trend=np.divide(np.nansum(curves,axis=0),count,out=np.full_like(grid,np.nan),where=count>0)
@@ -386,7 +386,7 @@ def load(root,own):
     data['Bao_CIA']=series('Bao_CIA',path,'Table S1',age[keep],value[keep],'%','Age (Ma); CIA (%); ages >5 Ma')
     data['Liang_beta']=pair(root,'Liang_beta',['Liang2021/*.xlsx'],0,2,0,3,'ratio','Age (Ma); beta-carotane/C36')
     path=find(root,'Wang2019/*.csv');table=pd.read_csv(path)
-    for variable,unit in [('MAP','mm/yr'),('MAT','deg C')]:
+    for variable,unit in [('MAP','mm'),('MAT','deg C')]:
         lo=num(table[variable+'_lower']);hi=num(table[variable+'_upper']);key='Wang2019_'+variable
         data[key]=series(key,path,'Supplementary Table 5',(table.old_ma+table.young_ma)/2,(lo+hi)/2,unit,
                          'Published interval bounds; midpoint retained only for bookkeeping',lo,hi)
@@ -395,12 +395,12 @@ def load(root,own):
     return data
 def main():
     a=args();style();data=load(a.root,a.own);used=[]
-    labels=[('This study: final regional precipitation reconstructions','MAP (mm yr$^{-1}$)'),
+    labels=[('This study: final regional precipitation reconstructions','MAP (mm)'),
             ('This study: final regional temperature reconstructions','MAT (°C)'),
-            ('Regional precipitation reconstructions - Zhang et al. (2024)','MAP (mm yr$^{-1}$)'),
-            ('Weihe phytolith-based precipitation ranges - Wang et al. (2019)','MAP (mm yr$^{-1}$)'),
+            ('Regional precipitation reconstructions - Zhang et al. (2024)','MAP (mm)'),
+            ('Weihe phytolith-based precipitation ranges - Wang et al. (2019)','MAP (mm)'),
             ('Weihe phytolith-based temperature ranges - Wang et al. (2019)','MAT (°C)'),
-            ('Western pollen-based precipitation - Jia et al. (2021; shared archives)','MAP (mm yr$^{-1}$)'),
+            ('Western pollen-based precipitation - Jia et al. (2021; shared archives)','MAP (mm)'),
             ('Western pollen-based temperature - Jia et al. (2021; shared archives)','MAT (°C)'),
             ('HTTL chemical index of alteration - Bao et al. (2019; focused y-axis)','CIA (%)'),
             ('Western lake-environment proxy - Liang et al. (2021)','Beta-carotane/C36'),
